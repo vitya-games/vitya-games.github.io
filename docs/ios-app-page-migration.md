@@ -4,10 +4,9 @@ Frissítve: 2026. augusztus 17.
 
 ## Jelenlegi állapot
 
-A három teljes appkönyvtár átkerült a Vitya Games GitHub Pages repójába. A
-következő deploy után az új marketing-, support- és privacy-oldalak a Games
-domainen lesznek, a régi Labs marketingoldalak pedig átirányítanak az új
-helyükre.
+A három teljes appkönyvtár átkerült és publikálva lett a Vitya Games GitHub
+Pages repójában. Az új marketing-, support- és privacy-oldalak a Games domainen
+érhetők el, a régi Labs marketingoldalak pedig átirányítanak az új helyükre.
 
 Az App Store-ban jelenleg használt Labs support- és privacy-végpontokat még nem
 szabad törölni. Ezek változatlanul elérhetők maradnak addig, amíg minden App
@@ -22,6 +21,18 @@ ellenőrizve.
 
 A megtartott régi végpontok ugyanezekkel a fájlnevekkel a
 `https://vitya-labs.github.io/<app>/` útvonalakon érhetők el.
+
+### App Store Connect állapot — 2026. augusztus 17.
+
+| App | Verzióállapot | Support / Marketing | Privacy Policy URL | Következő teendő |
+|---|---|---|---|---|
+| Hotdog Runner | 1.0 Ready for Distribution | Még Labs; a kiadott verzión zárolt | Még Labs; az Apple új verziót kér a módosításhoz | A következő verzió létrehozásakor mindhárom URL átírása |
+| Gull Flyer | 1.0 Waiting for Review | Games URL-ekre átírva és mentve | Games URL-re átírva és mentve | Megjelenés után publikus App Store-linkek ellenőrzése |
+| Grill Sitter | 1.0 Prepare for Submission | Games URL-ekre átírva és mentve | Games URL-re átírva és mentve | Beküldés és megjelenés után publikus App Store-linkek ellenőrzése |
+
+A Gull Flyer és Grill Sitter privacy-változásai az Apple jelzése szerint az
+adott következő appverzió megjelenésével lépnek élesbe. A régi Labs
+support/privacy-oldalakat ezért egyik appnál sem szabad még eltávolítani.
 
 ## Élesítési sorrend
 
@@ -42,8 +53,9 @@ App Store Connect rekordján.
 
 1. **Support URL:** Apps → az app → az aktuális iOS-verzió → Version
    Information. Minden lokalizációban írd át a Support URL mezőt a fenti új
-   Games support URL-re, majd mentsd. Az Apple referenciája szerint a Support
-   URL verziószintű mező és bármikor szerkeszthető.
+   Games support URL-re, majd mentsd. A mező verziószintű; egy már kiadott,
+   `Ready for Distribution` verzión zárolt lehet, ilyenkor a következő verzión
+   kell átírni.
 2. **Marketing URL:** ha a mező ki van töltve, ugyanitt állítsd az új Games
    marketingoldalra. Ellenőrizd az összes lokalizációt.
 3. **Privacy Policy URL:** Apps → az app → App Privacy → Privacy Policy → Edit.
