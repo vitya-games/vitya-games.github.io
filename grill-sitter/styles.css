@@ -1,0 +1,11 @@
+@import url("../hotdog-runner/styles.css");
+
+.store-badge--disabled {
+  cursor: default;
+  user-select: none;
+}
+
+.store-badge--disabled:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: none;
+}
