@@ -34,6 +34,29 @@ A Gull Flyer és Grill Sitter privacy-változásai az Apple jelzése szerint az
 adott következő appverzió megjelenésével lépnek élesbe. A régi Labs
 support/privacy-oldalakat ezért egyik appnál sem szabad még eltávolítani.
 
+## Hátramaradó teendők
+
+- [ ] Hotdog Runner következő verziójának létrehozása az App Store Connectben.
+- [ ] A Hotdog Runner Support, Marketing és Privacy Policy URL-jeinek átírása
+  a Games címekre.
+- [ ] A Hotdog Runner új verziójának beküldése és kiadása.
+- [ ] A Gull Flyer jelenlegi, ellenőrzés alatt álló verziójának megjelenése.
+- [ ] A Grill Sitter jelenlegi verziójának beküldése és megjelenése.
+- [ ] Mindhárom publikus App Store-oldalon a support-, marketing- és
+  privacy-linkek végigkattintása.
+- [ ] Legalább 24 óra várakozás az utolsó App Store-metaadat módosítása után.
+- [ ] A régi Labs support/privacy oldalak átirányítása a megfelelő Games
+  oldalakra.
+- [ ] Az átirányítások megtartása legalább egy teljes kiadási cikluson keresztül.
+- [ ] A régi `vitya-labs.github.io` hivatkozások keresése az összes kapcsolódó
+  repóban és külső felületen.
+- [ ] A három régi appkönyvtár törlése a Labs repóból, amikor már nincs rájuk
+  hivatkozás.
+- [ ] A Hotdog Runner Labs-főoldali projektkártyájának és konfigurációs
+  bejegyzésének eltávolítása.
+- [ ] A Labs takarítás publikálása.
+- [ ] Az összes Games URL, Labs-átirányítás és App Store-link végső ellenőrzése.
+
 ## Élesítési sorrend
 
 1. Publikáld először a Vitya Games repót, és várd meg a GitHub Pages deploy

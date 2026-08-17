@@ -255,6 +255,50 @@ section[id] { scroll-margin-top: 6.5rem; }
 .project-card:first-child:nth-last-child(odd) .project-media > img { height: 25rem; min-height: 25rem; aspect-ratio: auto; }
 .project-card:hover .project-media > img { transform: scale(1.012); }
 .project-media--contain > img { object-fit: contain; background: #0b0e12; }
+.project-card--teaser { position: relative; isolation: isolate; }
+.project-card--teaser::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 32%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 42%),
+    linear-gradient(180deg, rgba(8, 10, 12, .12), rgba(8, 10, 12, .72));
+}
+.project-card--teaser .project-media > img {
+  filter: blur(16px) saturate(.45) brightness(.58);
+  transform: scale(1.1);
+}
+.project-card--teaser:hover .project-media > img { transform: scale(1.12); }
+.project-card--teaser .project-body {
+  opacity: .22;
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+.project-teaser {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.project-teaser-kicker {
+  margin: 0 0 .7rem;
+  color: var(--accent);
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.project-teaser h3 { max-width: 11ch; font-size: clamp(2rem, 4vw, 3.25rem); }
+.project-teaser > p:not(.project-teaser-kicker) { max-width: 22rem; margin: .85rem 0 1.15rem; color: #d8dbd5; line-height: 1.55; }
+.project-teaser .tag { border-color: color-mix(in srgb, var(--accent) 38%, var(--line)); color: var(--text); background: rgba(8, 10, 12, .48); backdrop-filter: blur(10px); }
 .project-body { display: flex; flex-direction: column; padding: clamp(1.35rem, 3vw, 2rem); }
 .project-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1rem; margin-bottom: 1rem; }
 .project-heading-copy { min-width: 0; }
