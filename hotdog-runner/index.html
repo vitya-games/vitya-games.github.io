@@ -16,18 +16,30 @@
   <link rel="apple-touch-icon" href="./assets/icon.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body
+  data-title-en="Hotdog Runner | Vitya Games"
+  data-title-hu="Hotdog Runner | Vitya Games"
+  data-title-pr="Hotdog Runner | Vitya Games"
+  data-description-en="Download Hotdog Runner, a pixel-art endless runner for iPhone and iPad from Vitya Games."
+  data-description-hu="Töltsd le a Hotdog Runnert, a Vitya Games pixelgrafikus endless runnerét iPhone-ra és iPadre."
+  data-description-pr="Haul down Hotdog Runner, a pixel-art endless runner for iPhone an' iPad from Vitya Games."
+>
   <main class="shell landing-shell">
     <header class="topbar">
       <a class="brand" href="../">
         <img src="../assets/icons/vitya-games.png" alt="">
         <span>Vitya Games</span>
       </a>
-      <nav class="landing-nav" aria-label="Hotdog Runner navigation">
-        <a href="#gameplay">Gameplay</a>
-        <a href="./support.html">Support</a>
-        <a href="./privacy.html">Privacy</a>
-      </nav>
+      <div class="topbar-actions">
+        <nav class="landing-nav" aria-label="Hotdog Runner navigation">
+          <a href="#gameplay" data-en="Gameplay" data-hu="Játékmenet" data-pr="Gameplay">Gameplay</a>
+          <a href="./support.html" data-en="Support" data-hu="Támogatás" data-pr="Ship's aid">Support</a>
+          <a href="./privacy.html" data-en="Privacy" data-hu="Adatvédelem" data-pr="Privacy">Privacy</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button><button type="button" data-lang="hu">HU</button><button type="button" data-lang="pr" title="Pirate English">ARR</button>
+        </div>
+      </div>
     </header>
 
     <section class="game-hero">
@@ -35,42 +47,37 @@
         <div class="game-title-row">
           <img class="app-icon" src="./assets/icon.png" alt="Hotdog Runner app icon">
           <div>
-            <p class="eyebrow">A Vitya Games game</p>
+            <p class="eyebrow" data-en="A Vitya Games game" data-hu="Vitya Games játék" data-pr="A Vitya Games game">A Vitya Games game</p>
             <h1>Hotdog Runner</h1>
           </div>
         </div>
-        <p class="lead">
-          A tiny hotdog. An endless garden. One very clear objective:
-          do not become dinner.
-        </p>
-        <p class="hero-detail">
-          Jump over flaming kettle grills, duck beneath diving seagulls, and
-          keep running as the garden shifts from bright afternoon to moonlit night.
-        </p>
+        <p class="lead" data-en="A tiny hotdog. An endless garden. One very clear objective: do not become dinner." data-hu="Egy apró hotdog. Egy végtelen kert. Egy nagyon világos cél: ne legyen belőle vacsora." data-pr="A wee hotdog. An endless garden. One very clear order: do not become supper.">A tiny hotdog. An endless garden. One very clear objective: do not become dinner.</p>
+        <p class="hero-detail" data-en="Jump over flaming kettle grills, duck beneath diving seagulls, and keep running as the garden shifts from bright afternoon to moonlit night." data-hu="Ugorj át a lángoló grilleken, bukj le a zuhanó sirályok elől, és fuss tovább, ahogy a kert a napsütötte délutánból holdfényes éjszakába fordul." data-pr="Leap the flamin' kettle grills, duck beneath the divin' gulls, an' keep runnin' as the garden turns from bright afternoon to moonlit night.">Jump over flaming kettle grills, duck beneath diving seagulls, and keep running as the garden shifts from bright afternoon to moonlit night.</p>
         <div class="hero-actions">
           <a
             class="store-badge"
             href="https://apps.apple.com/hu/app/hotdog-runner/id6794843699?l=hu"
             target="_blank"
             rel="noreferrer"
+            data-aria-en="Download Hotdog Runner on the App Store" data-aria-hu="Hotdog Runner letöltése az App Store-ból" data-aria-pr="Haul Hotdog Runner down from the App Store"
             aria-label="Download Hotdog Runner on the App Store"
           >
             <span class="store-arrow" aria-hidden="true">↗</span>
             <span>
-              <small>Download on the</small>
+              <small data-en="Download on the" data-hu="Letöltés innen:" data-pr="Haul it down from the">Download on the</small>
               <strong>App Store</strong>
             </span>
           </a>
-          <a class="text-link" href="#gameplay">See the run ↓</a>
+          <a class="text-link" href="#gameplay" data-en="See the run ↓" data-hu="Nézd meg a futást ↓" data-pr="See the run ↓">See the run ↓</a>
         </div>
         <ul class="hero-facts" aria-label="Game highlights">
-          <li>No ads</li>
-          <li>No accounts</li>
-          <li>Plays offline</li>
+          <li data-en="No ads" data-hu="Nincs reklám" data-pr="No ads">No ads</li>
+          <li data-en="No accounts" data-hu="Nincs fiók" data-pr="No accounts">No accounts</li>
+          <li data-en="Plays offline" data-hu="Offline is működik" data-pr="Sails offline">Plays offline</li>
         </ul>
       </div>
 
-      <div class="hero-device" aria-label="Hotdog Runner daytime gameplay">
+      <div class="hero-device" data-aria-en="Hotdog Runner daytime gameplay" data-aria-hu="Hotdog Runner nappali játékmenet" data-aria-pr="Hotdog Runner daytime gameplay" aria-label="Hotdog Runner daytime gameplay">
         <div class="device-camera" aria-hidden="true"></div>
         <img src="./assets/gameplay-day.png" alt="Hotdog Runner facing flaming and smoking kettle grills in a suburban garden">
       </div>
@@ -79,90 +86,85 @@
     <section class="feature-strip" aria-label="How to play">
       <article>
         <span>01</span>
-        <h2>Jump the grills</h2>
-        <p>Tap the right side. Clear the flames. Keep the sausage moving.</p>
+        <h2 data-en="Jump the grills" data-hu="Ugord át a grilleket" data-pr="Leap the grills">Jump the grills</h2>
+        <p data-en="Tap the right side. Clear the flames. Keep the sausage moving." data-hu="Koppints a jobb oldalra. Kerüld el a lángokat. Tartsd mozgásban a virslit." data-pr="Tap the starboard side. Clear the flames. Keep the sausage movin'.">Tap the right side. Clear the flames. Keep the sausage moving.</p>
       </article>
       <article>
         <span>02</span>
-        <h2>Duck the gulls</h2>
-        <p>Hold the left side when a middle-lane seagull dives into view.</p>
+        <h2 data-en="Duck the gulls" data-hu="Bukj le a sirályok elől" data-pr="Duck the gulls">Duck the gulls</h2>
+        <p data-en="Hold the left side when a middle-lane seagull dives into view." data-hu="Tartsd nyomva a bal oldalt, amikor a középső sávban sirály zuhan be." data-pr="Hold the port side when a middle-lane gull dives into view.">Hold the left side when a middle-lane seagull dives into view.</p>
       </article>
       <article>
         <span>03</span>
-        <h2>Relish the run</h2>
-        <p>The pace climbs, the score rolls on, and every obstacle stays fair.</p>
+        <h2 data-en="Relish the run" data-hu="Élvezd a futást" data-pr="Relish the run">Relish the run</h2>
+        <p data-en="The pace climbs, the score rolls on, and every obstacle stays fair." data-hu="A tempó nő, a pontszám pörög, és minden akadály tisztességes marad." data-pr="The pace climbs, the score rolls on, an' every obstacle stays fair.">The pace climbs, the score rolls on, and every obstacle stays fair.</p>
       </article>
     </section>
 
     <section class="showcase" id="gameplay">
       <div class="showcase-heading">
         <div>
-          <p class="eyebrow">Day fades into night</p>
-          <h2>A small world with a long chase.</h2>
+          <p class="eyebrow" data-en="Day fades into night" data-hu="A nappal éjszakába fordul" data-pr="Day fades into night">Day fades into night</p>
+          <h2 data-en="A small world with a long chase." data-hu="Apró világ, hosszú hajszával." data-pr="A small isle with a long chase.">A small world with a long chase.</h2>
         </div>
-        <p>
-          Houses light up, stars come out, grills flicker, and gulls swoop into
-          three distinct lanes. The scenery changes. The rules stay readable.
-        </p>
+        <p data-en="Houses light up, stars come out, grills flicker, and gulls swoop into three distinct lanes. The scenery changes. The rules stay readable." data-hu="Kigyulladnak a házak ablakai, előjönnek a csillagok, lobognak a grillek, és a sirályok három külön sávba csapnak le. A díszlet változik. A szabályok olvashatók maradnak." data-pr="Houses light up, stars come out, grills flicker, an' gulls swoop into three separate lanes. The scenery changes. The rules stay readable.">Houses light up, stars come out, grills flicker, and gulls swoop into three distinct lanes. The scenery changes. The rules stay readable.</p>
       </div>
 
       <div class="screen-grid">
         <figure class="screen-card screen-card-wide">
           <img src="./assets/gameplay-night.png" alt="Hotdog Runner at night with stars, moonlit sky, lit houses, a flaming grill, and a diving seagull">
           <figcaption>
-            <strong>Night run</strong>
-            <span>Moonlight, lit windows, and the same split-second decisions.</span>
+            <strong data-en="Night run" data-hu="Éjszakai futás" data-pr="Night run">Night run</strong>
+            <span data-en="Moonlight, lit windows, and the same split-second decisions." data-hu="Holdfény, kivilágított ablakok és ugyanazok a másodperctöredéknyi döntések." data-pr="Moonlight, lit windows, an' the same split-second decisions.">Moonlight, lit windows, and the same split-second decisions.</span>
           </figcaption>
         </figure>
         <figure class="screen-card">
           <img src="./assets/game-over.png" alt="Hotdog Runner game-over screen after colliding with a grill">
           <figcaption>
-            <strong>One more run?</strong>
-            <span>Your best score stays on your device.</span>
+            <strong data-en="One more run?" data-hu="Még egy kör?" data-pr="One more run?">One more run?</strong>
+            <span data-en="Your best score stays on your device." data-hu="A legjobb eredményed az eszközödön marad." data-pr="Yer best score stays on yer own device.">Your best score stays on your device.</span>
           </figcaption>
         </figure>
       </div>
     </section>
 
     <section class="fairness-card">
-      <p class="eyebrow">Built around fair play</p>
-      <h2>Fast does not mean impossible.</h2>
-      <p>
-        Every ground obstacle is checked against the actual jump physics before
-        it appears. Low gulls call for a jump, middle gulls call for a duck, and
-        high gulls reward a steady nerve.
-      </p>
+      <p class="eyebrow" data-en="Built around fair play" data-hu="Tisztességes játékra tervezve" data-pr="Built around fair play">Built around fair play</p>
+      <h2 data-en="Fast does not mean impossible." data-hu="A gyors nem jelent lehetetlent." data-pr="Fast don't mean impossible.">Fast does not mean impossible.</h2>
+      <p data-en="Every ground obstacle is checked against the actual jump physics before it appears. Low gulls call for a jump, middle gulls call for a duck, and high gulls reward a steady nerve." data-hu="Minden földi akadály a tényleges ugrásfizikához mérve jelenik meg. Az alacsony sirály ugrást kíván, a középső bukást, a magas pedig hidegvért." data-pr="Every ground obstacle be checked against the true jump physics afore it appears. Low gulls call for a leap, middle gulls for a duck, an' high gulls reward a steady nerve.">Every ground obstacle is checked against the actual jump physics before it appears. Low gulls call for a jump, middle gulls call for a duck, and high gulls reward a steady nerve.</p>
     </section>
 
     <section class="final-cta">
       <img class="final-icon" src="./assets/icon.png" alt="">
       <div>
-        <p class="eyebrow">Ready to run</p>
-        <h2>Hotdog Runner is now on iPhone and iPad.</h2>
+        <p class="eyebrow" data-en="Ready to run" data-hu="Indulásra kész" data-pr="Ready to run">Ready to run</p>
+        <h2 data-en="Hotdog Runner is now on iPhone and iPad." data-hu="A Hotdog Runner már elérhető iPhone-on és iPaden." data-pr="Hotdog Runner be now on iPhone an' iPad.">Hotdog Runner is now on iPhone and iPad.</h2>
       </div>
       <a
         class="store-badge compact"
         href="https://apps.apple.com/hu/app/hotdog-runner/id6794843699?l=hu"
         target="_blank"
         rel="noreferrer"
+        data-aria-en="Download Hotdog Runner on the App Store" data-aria-hu="Hotdog Runner letöltése az App Store-ból" data-aria-pr="Haul Hotdog Runner down from the App Store"
         aria-label="Download Hotdog Runner on the App Store"
       >
         <span class="store-arrow" aria-hidden="true">↗</span>
         <span>
-          <small>Download on the</small>
+          <small data-en="Download on the" data-hu="Letöltés innen:" data-pr="Haul it down from the">Download on the</small>
           <strong>App Store</strong>
         </span>
       </a>
     </section>
 
     <footer class="landing-footer">
-      <span>© 2026 Vitya Games</span>
+      <span>© <span data-current-year></span> Vitya Games</span>
       <div>
-        <a href="./support.html">Support</a>
-        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./support.html" data-en="Support" data-hu="Támogatás" data-pr="Ship's aid">Support</a>
+        <a href="./privacy.html" data-en="Privacy Policy" data-hu="Adatvédelmi tájékoztató" data-pr="Privacy Policy">Privacy Policy</a>
         <a href="../">Vitya Games</a>
       </div>
     </footer>
   </main>
+  <script src="../site.js"></script>
 </body>
 </html>

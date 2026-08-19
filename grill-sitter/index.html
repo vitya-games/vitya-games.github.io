@@ -16,18 +16,30 @@
   <link rel="apple-touch-icon" href="./assets/icon.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body
+  data-title-en="Grill Sitter | Vitya Games"
+  data-title-hu="Grill Sitter | Vitya Games"
+  data-title-pr="Grill Sitter | Vitya Games"
+  data-description-en="Grill Sitter is a pixel-art timing game for iPhone and iPad from Vitya Games."
+  data-description-hu="A Grill Sitter a Vitya Games pixelgrafikus időzítős játéka iPhone-ra és iPadre."
+  data-description-pr="Grill Sitter be a pixel-art timin' game for iPhone an' iPad from Vitya Games."
+>
   <main class="shell landing-shell">
     <header class="topbar">
       <a class="brand" href="../">
         <img src="../assets/icons/vitya-games.png" alt="">
         <span>Vitya Games</span>
       </a>
-      <nav class="landing-nav" aria-label="Grill Sitter navigation">
-        <a href="#gameplay">Gameplay</a>
-        <a href="./support.html">Support</a>
-        <a href="./privacy.html">Privacy</a>
-      </nav>
+      <div class="topbar-actions">
+        <nav class="landing-nav" aria-label="Grill Sitter navigation">
+          <a href="#gameplay" data-en="Gameplay" data-hu="Játékmenet" data-pr="Gameplay">Gameplay</a>
+          <a href="./support.html" data-en="Support" data-hu="Támogatás" data-pr="Ship's aid">Support</a>
+          <a href="./privacy.html" data-en="Privacy" data-hu="Adatvédelem" data-pr="Privacy">Privacy</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button><button type="button" data-lang="hu">HU</button><button type="button" data-lang="pr" title="Pirate English">ARR</button>
+        </div>
+      </div>
     </header>
 
     <section class="game-hero">
@@ -35,36 +47,34 @@
         <div class="game-title-row">
           <img class="app-icon" src="./assets/icon.png" alt="Grill Sitter app icon">
           <div>
-            <p class="eyebrow">A Vitya Games game</p>
+            <p class="eyebrow" data-en="A Vitya Games game" data-hu="Vitya Games játék" data-pr="A Vitya Games game">A Vitya Games game</p>
             <h1>Grill Sitter</h1>
           </div>
         </div>
-        <p class="lead">
-          A patient grill. An endless garden. One very clear objective:
-          cook everything that crosses.
-        </p>
-        <p class="hero-detail">
-          Let the coals charge, then tap to flare at exactly the right height.
-          Cook hotdogs and seagulls before they escape.
-        </p>
+        <p class="lead" data-en="A patient grill. An endless garden. One very clear objective: cook everything that crosses." data-hu="Egy türelmes grill. Egy végtelen kert. Egy nagyon világos cél: süss meg mindent, ami átkel." data-pr="A patient grill. An endless garden. One very clear order: cook everythin' that crosses.">A patient grill. An endless garden. One very clear objective: cook everything that crosses.</p>
+        <p class="hero-detail" data-en="Let the coals charge, then tap to flare at exactly the right height. Cook hotdogs and seagulls before they escape." data-hu="Hagyd feltöltődni a parazsat, majd koppints, hogy pontosan a megfelelő magasságban lobbanjon fel a láng. Süsd meg a hotdogokat és a sirályokat, mielőtt elmenekülnek." data-pr="Let the coals charge, then tap to flare at exactly the right height. Cook the hotdogs an' gulls afore they escape.">Let the coals charge, then tap to flare at exactly the right height. Cook hotdogs and seagulls before they escape.</p>
         <div class="hero-actions">
-          <span class="store-badge store-badge--disabled" aria-label="Grill Sitter — coming soon on the App Store">
+          <span
+            class="store-badge store-badge--disabled"
+            data-aria-en="Grill Sitter — coming soon on the App Store" data-aria-hu="Grill Sitter — hamarosan az App Store-ban" data-aria-pr="Grill Sitter — comin' soon on the App Store"
+            aria-label="Grill Sitter — coming soon on the App Store"
+          >
             <span class="store-arrow" aria-hidden="true">…</span>
             <span>
-              <small>Coming soon on the</small>
+              <small data-en="Coming soon on the" data-hu="Hamarosan itt:" data-pr="Comin' soon on the">Coming soon on the</small>
               <strong>App Store</strong>
             </span>
           </span>
-          <a class="text-link" href="#gameplay">See the cookout ↓</a>
+          <a class="text-link" href="#gameplay" data-en="See the cookout ↓" data-hu="Nézd meg a sütést ↓" data-pr="See the cookout ↓">See the cookout ↓</a>
         </div>
         <ul class="hero-facts" aria-label="Game highlights">
-          <li>No ads</li>
-          <li>No accounts</li>
-          <li>Plays offline</li>
+          <li data-en="No ads" data-hu="Nincs reklám" data-pr="No ads">No ads</li>
+          <li data-en="No accounts" data-hu="Nincs fiók" data-pr="No accounts">No accounts</li>
+          <li data-en="Plays offline" data-hu="Offline is működik" data-pr="Sails offline">Plays offline</li>
         </ul>
       </div>
 
-      <div class="hero-device" aria-label="Grill Sitter daytime gameplay">
+      <div class="hero-device" data-aria-en="Grill Sitter daytime gameplay" data-aria-hu="Grill Sitter nappali játékmenet" data-aria-pr="Grill Sitter daytime gameplay" aria-label="Grill Sitter daytime gameplay">
         <div class="device-camera" aria-hidden="true"></div>
         <img src="./assets/gameplay-day.png" alt="Grill Sitter flaring beneath crossing seagulls in a suburban garden during the day">
       </div>
@@ -73,84 +83,82 @@
     <section class="feature-strip" aria-label="How to play">
       <article>
         <span>01</span>
-        <h2>Read the coals</h2>
-        <p>The colour shows which lane your next flare can reach.</p>
+        <h2 data-en="Read the coals" data-hu="Olvasd a parazsat" data-pr="Read the coals">Read the coals</h2>
+        <p data-en="The colour shows which lane your next flare can reach." data-hu="A szín mutatja, melyik sávot éri el a következő lángolás." data-pr="The colour shows which lane yer next flare can reach.">The colour shows which lane your next flare can reach.</p>
       </article>
       <article>
         <span>02</span>
-        <h2>Tap to flare</h2>
-        <p>The whole screen is the button. One tap spends the heat you saved.</p>
+        <h2 data-en="Tap to flare" data-hu="Koppints a lángért" data-pr="Tap to flare">Tap to flare</h2>
+        <p data-en="The whole screen is the button. One tap spends the heat you saved." data-hu="A teljes képernyő gomb. Egy koppintás elhasználja az összegyűjtött hőt." data-pr="The whole screen be the button. One tap spends the heat ye saved.">The whole screen is the button. One tap spends the heat you saved.</p>
       </article>
       <article>
         <span>03</span>
-        <h2>Cook every crossing</h2>
-        <p>Catch hotdogs and gulls before one gets past the grill.</p>
+        <h2 data-en="Cook every crossing" data-hu="Süss meg minden átkelőt" data-pr="Cook every crossin'">Cook every crossing</h2>
+        <p data-en="Catch hotdogs and gulls before one gets past the grill." data-hu="Kapd el a hotdogokat és a sirályokat, mielőtt bármelyik elhalad a grill mellett." data-pr="Catch the hotdogs an' gulls afore one slips past the grill.">Catch hotdogs and gulls before one gets past the grill.</p>
       </article>
     </section>
 
     <section class="showcase" id="gameplay">
       <div class="showcase-heading">
         <div>
-          <p class="eyebrow">Day fades into night</p>
-          <h2>A quiet garden with a tall order.</h2>
+          <p class="eyebrow" data-en="Day fades into night" data-hu="A nappal éjszakába fordul" data-pr="Day fades into night">Day fades into night</p>
+          <h2 data-en="A quiet garden with a tall order." data-hu="Csendes kert, nagy feladattal." data-pr="A quiet garden with a tall order.">A quiet garden with a tall order.</h2>
         </div>
-        <p>
-          Houses light up, stars come out, and dinner keeps crossing in three
-          lanes. The scenery changes. The timing stays precise.
-        </p>
+        <p data-en="Houses light up, stars come out, and dinner keeps crossing in three lanes. The scenery changes. The timing stays precise." data-hu="Kigyulladnak a házak ablakai, előjönnek a csillagok, és a vacsora három sávban kel át újra meg újra. A díszlet változik. Az időzítés precíz marad." data-pr="Houses light up, stars come out, an' supper keeps crossin' in three lanes. The scenery changes. The timin' stays precise.">Houses light up, stars come out, and dinner keeps crossing in three lanes. The scenery changes. The timing stays precise.</p>
       </div>
 
       <div class="screen-grid">
         <figure class="screen-card screen-card-wide">
           <img src="./assets/gameplay-night.png" alt="Grill Sitter at night with a tall flame, moon, lit houses, and crossing seagulls">
           <figcaption>
-            <strong>Night shift</strong>
-            <span>Moonlight, lit windows, and the same split-second timing.</span>
+            <strong data-en="Night shift" data-hu="Éjszakai műszak" data-pr="Night watch">Night shift</strong>
+            <span data-en="Moonlight, lit windows, and the same split-second timing." data-hu="Holdfény, kivilágított ablakok és ugyanaz a másodperctöredéknyi időzítés." data-pr="Moonlight, lit windows, an' the same split-second timin'.">Moonlight, lit windows, and the same split-second timing.</span>
           </figcaption>
         </figure>
         <figure class="screen-card">
           <img src="./assets/game-over.png" alt="Grill Sitter game-over screen after a seagull gets past the grill">
           <figcaption>
-            <strong>One more shift?</strong>
-            <span>Your best cooked score stays on your device.</span>
+            <strong data-en="One more shift?" data-hu="Még egy műszak?" data-pr="One more watch?">One more shift?</strong>
+            <span data-en="Your best cooked score stays on your device." data-hu="A legjobb sütési eredményed az eszközödön marad." data-pr="Yer best cooked score stays on yer own device.">Your best cooked score stays on your device.</span>
           </figcaption>
         </figure>
       </div>
     </section>
 
     <section class="fairness-card">
-      <p class="eyebrow">Built around fair timing</p>
-      <h2>Every wave can be cooked.</h2>
-      <p>
-        The game only sends waves the grill could handle with the heat and
-        recovery time available. Read the lane, wait for the coals, and light
-        the flare at the right moment.
-      </p>
+      <p class="eyebrow" data-en="Built around fair timing" data-hu="Tisztességes időzítésre tervezve" data-pr="Built around fair timin'">Built around fair timing</p>
+      <h2 data-en="Every wave can be cooked." data-hu="Minden hullám megsüthető." data-pr="Every wave can be cooked.">Every wave can be cooked.</h2>
+      <p data-en="The game only sends waves the grill could handle with the heat and recovery time available. Read the lane, wait for the coals, and light the flare at the right moment." data-hu="A játék csak olyan hullámokat küld, amelyeket a grill a rendelkezésre álló hővel és regenerálódási idővel kezelni tud. Olvasd a sávot, várj a parázsra, és a megfelelő pillanatban gyújtsd meg a lángot." data-pr="The game only sends waves the grill could handle with the heat an' recovery time at hand. Read the lane, wait for the coals, an' light the flare at the right moment.">The game only sends waves the grill could handle with the heat and recovery time available. Read the lane, wait for the coals, and light the flare at the right moment.</p>
     </section>
 
     <section class="final-cta">
       <img class="final-icon" src="./assets/icon.png" alt="">
       <div>
-        <p class="eyebrow">Preparing the fire</p>
-        <h2>Grill Sitter is coming to iPhone and iPad.</h2>
+        <p class="eyebrow" data-en="Preparing the fire" data-hu="Készül a tűz" data-pr="Preparin' the fire">Preparing the fire</p>
+        <h2 data-en="Grill Sitter is coming to iPhone and iPad." data-hu="A Grill Sitter hamarosan érkezik iPhone-ra és iPadre." data-pr="Grill Sitter be comin' to iPhone an' iPad.">Grill Sitter is coming to iPhone and iPad.</h2>
       </div>
-      <span class="store-badge compact store-badge--disabled" aria-label="Grill Sitter — coming soon on the App Store">
+      <span
+        class="store-badge compact store-badge--disabled"
+        data-aria-en="Grill Sitter — coming soon on the App Store" data-aria-hu="Grill Sitter — hamarosan az App Store-ban" data-aria-pr="Grill Sitter — comin' soon on the App Store"
+        aria-label="Grill Sitter — coming soon on the App Store"
+      >
         <span class="store-arrow" aria-hidden="true">…</span>
         <span>
-          <small>Coming soon on the</small>
+          <small data-en="Coming soon on the" data-hu="Hamarosan itt:" data-pr="Comin' soon on the">Coming soon on the</small>
           <strong>App Store</strong>
         </span>
       </span>
     </section>
 
     <footer class="landing-footer">
-      <span>© 2026 Vitya Games</span>
+      <span>© <span data-current-year></span> Vitya Games</span>
       <div>
-        <a href="./support.html">Support</a>
-        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./support.html" data-en="Support" data-hu="Támogatás" data-pr="Ship's aid">Support</a>
+        <a href="./privacy.html" data-en="Privacy Policy" data-hu="Adatvédelmi tájékoztató" data-pr="Privacy Policy">Privacy Policy</a>
         <a href="../">Vitya Games</a>
       </div>
     </footer>
   </main>
+  <script src="../site.js"></script>
 </body>
 </html>
