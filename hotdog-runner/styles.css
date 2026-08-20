@@ -580,13 +580,14 @@ li {
 .lang-switch button {
   border: 0;
   border-radius: 999px;
-  padding: 0.4rem 0.55rem;
+  padding: 0.28rem 0.48rem;
   cursor: pointer;
   color: var(--muted);
   background: transparent;
   font: inherit;
-  font-size: 0.72rem;
-  font-weight: 800;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.15;
 }
 
 .lang-switch button.is-active {
@@ -604,7 +605,7 @@ li {
   }
 
   .lang-switch button {
-    padding: 0.4rem 0.45rem;
-    font-size: 0.68rem;
+    padding: 0.28rem 0.4rem;
+    font-size: 0.98rem;
   }
 }
