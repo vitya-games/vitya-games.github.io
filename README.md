@@ -35,6 +35,14 @@ All six carry the same three languages as every other page here. The exact URLs
 are recorded in the game repository's `docs/publishing-urls.md`, which is where
 the store and console forms are filled in from.
 
+**The shelf does not link to them, and that is deliberate.** Hotdog Race is
+unannounced, so its card on the front page is a `project-card--teaser` like Gull
+Flyer's and Grill Sitter's: blurred artwork, no name, "Coming soon to iOS". The
+six pages are reachable by their URLs — which is all a store form or an OAuth
+consent screen needs — and nothing navigates to them until the game is announced.
+Turning the teaser back into a full card is a launch-day step, not a missing
+link.
+
 Screenshots under `hotdog-race/assets/` are captured from the running game at
 1280×720; the icon is the approved App Store artwork, resized. Regenerating them
 is described in the game repository's `docs/publishing-urls.md`.
