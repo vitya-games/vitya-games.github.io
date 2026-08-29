@@ -36,8 +36,8 @@ are recorded in the game repository's `docs/publishing-urls.md`, which is where
 the store and console forms are filled in from.
 
 **The shelf does not link to them, and that is deliberate.** Hotdog Race is
-unannounced, so its card on the front page is a `project-card--teaser` like Gull
-Flyer's and Grill Sitter's: blurred artwork, no name, "Coming soon to iOS". The
+unannounced, so its card on the front page is a `project-card--teaser` like Grill
+Sitter's: blurred artwork, no name, "Coming soon to iOS". The
 six pages are reachable by their URLs — which is all a store form or an OAuth
 consent screen needs — and nothing navigates to them until the game is announced.
 Turning the teaser back into a full card is a launch-day step, not a missing
